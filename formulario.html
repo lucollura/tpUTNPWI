@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulario.css">
+    <title>Consulta</title>
+</head>
+<body>
+    <header class="titulo">
+    <h1>CONSULTANOS!</h1>
+    </header>
+    <section>
+        
+        <form action="https://formspree.io/f/xoqbzkwo" method="POST">
+            <label for="Nombre Completo">Nombre Completo
+            <input type="text" name="Nombre Completo" id="Nombre Completo" class="formu" required></label>
+
+            <label for="Número de contacto">Número de contacto   
+            <input type="text" name="Número de contacto" id="Número de contacto"  placeholder= "sin 0 y 15" class="formu" required minlength="10" maxlength="10"/></label>
+        
+
+            <label for="email">Correo electrónico
+            <input type="email" name="email" id="email" placeholder="xxxxxxx@email.com" class="formu" required/></label>
+
+            <label for="Velocidad contratada">Velocidad contratada
+            <input type="text" name="Velocidad contratada" id="Velocidad contratada" placeholder="xxxx MB" class="formu"required/></label>
+            
+            <div class="select">
+            <label  for="Tipo de lugar">Selecciona el lugar de instalación </label>
+                <select name="tipo de lugar" id="tipo de lugar" class="cajitaopciones" required >
+                    <option value="Seleccione" selected> Seleccione</option>
+                    <option value="Casa"> Casa</option>
+                    <option value="Comercio"> Comercio</option>
+                    <option value="Fabrica">Fabrica</option>
+                    <option value="Campo">Campo</option>
+                    <option value="Otro (dejalo en información a tener en cuenta)">Otro (dejar en Comentarios)</option>
+                </select>
+            </div>
+        <div class="tpinstalación">
+            <label  for="Tipo de instalación"  class="tpinstalación">Tipo de instalación:</label>
+                <label for="Exterior">Exterior
+                <input type="checkbox" name="Instalacion" id="Exterior" id="Exterior" class="tpinstalación1"></label>
+                <label  for="">Interior
+                <input type="checkbox" name="Instalacion" id="Interior" id="Exterior" class="tpinstalación1"></label>
+
+            
+        </div> 
+
+            <label for="Info extra" class="comentarios">Comentarios:</label>
+            <textarea name="Info extra" id="Info extra" class= "cajita"></textarea>
+
+            <input type="submit" value="Enviar consulta" class="enviar">
+            
+        </form>
+    
+</section>
+</body>
+</html>
